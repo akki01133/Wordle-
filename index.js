@@ -1,7 +1,7 @@
 const http = require("http");
 
 let hostname = '127.0.0.1'
-let port = 8080
+let port = process.env.PORT || 8080
 
 
 const SECRET = "AJEET"; 
