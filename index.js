@@ -1,6 +1,6 @@
 const http = require("http");
 
-let hostname = '127.0.0.1'
+let hostname = '0.0.0.0'
 let port = process.env.PORT || 8080
 
 
