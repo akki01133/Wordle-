@@ -1,11 +1,11 @@
 {
   "name": "wordle",
   "version": "1.0.0",
-  "description": "",
+  "description": "Its a Wordle server ",
   "main": "index.js",
   "scripts": {
-    "start": "npm i && node index.js"
+    "start": "node index.js"
   },
-  "author": "",
+  "author": "Ajeet Kumar",
   "license": "ISC"
 }
