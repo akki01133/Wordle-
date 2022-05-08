@@ -1,2 +1,2 @@
-# Wordle-
+# Wordle+
 my own Wordle+ Server
