@@ -1,5 +1,7 @@
 const http = require("http");
+const checkWord = require('check-if-word');
 
+const words = checkWord('en');
 let hostname = '0.0.0.0'
 let port = process.env.PORT || 3000
 
@@ -16,9 +18,9 @@ const SECRET = SLIST[Math.floor((Math.random() * SLIST.length))];
 
 function myFunction(req, res) {
 	const GUESS = String(req.url.split('q=')[1]).toUpperCase()
-	console.log("this was "+ GUESS)
 	let ans = ""
-	if (GUESS != undefined && GUESS.length == 5) {
+	
+	if (GUESS != undefined && GUESS.length == 5 && words.check(GUESS)) {
 		for (let i = 0; i < 5; i++) {
 			if (GUESS[i] == SECRET[i]) {
 				ans += 'g'
